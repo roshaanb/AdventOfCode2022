@@ -38,4 +38,4 @@ function countHighestCalories(filename) {
   console.log(elfWithMost);
 }
 
-countHighestCalories("elvesItems.txt");
+countHighestCalories("day_1/elvesItems.txt");

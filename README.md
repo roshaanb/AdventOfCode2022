@@ -19,3 +19,14 @@
 ```
 
 </details>
+
+## Day 2: [Rock Paper Scissors](https://adventofcode.com/2022/day/2)
+
+<details>
+  <summary>Answer for part 1</summary>
+
+```javascript
+10310
+```
+
+</details>
