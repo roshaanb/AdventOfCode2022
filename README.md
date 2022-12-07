@@ -6,16 +6,16 @@
   <summary>Answer for part 1</summary>
 
 ```javascript
-67633;
+67633
 ```
 
 </details>
 
 <details>
-  <summary>Answer for part 2:</summary>
+  <summary>Answer for part 2</summary>
 
 ```javascript
-199628;
+199628
 ```
 
 </details>
