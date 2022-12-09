@@ -30,3 +30,12 @@
 ```
 
 </details>
+
+<details>
+  <summary>Answer for part 2</summary>
+
+```javascript
+14859
+```
+
+</details>
