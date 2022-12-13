@@ -1,19 +1,17 @@
 const { readFileSync } = require("fs");
 
-function strategy(filename) {
-  // array of results, each index beats previous index
-  var hierarchyArray = ["X", "Y", "Z"];
-
+function strategyForRockPaperScissors(filename) {
   // formatting the input data into an array of pairs
   const rawDataIntoPairs = readFileSync(filename, "utf-8");
 
-  // translating letters into r,p,s
+  // translating letters into r,p,s part 1 logic
   const translatedStringUsingPart1Logic = rawDataIntoPairs
     .replace(/X|A/g, "r")
     .replace(/Y|B/g, "p")
     .replace(/Z|C/g, "s")
     .split("\n");
 
+  // translating letters into r,p,s and win,lose,draw part 2 logic
   const translatedStringUsingPart2Logic = rawDataIntoPairs
     .replace(/A/g, "r")
     .replace(/B/g, "p")
@@ -106,4 +104,4 @@ function getDesiredResult(outcome, elfChoice) {
 
 console.log(`expect ${getDesiredResult("lose", "paper")} to be rock`);
 
-strategy("day_2/strategy.txt");
+strategyForRockPaperScissors("day_2/strategy.txt");

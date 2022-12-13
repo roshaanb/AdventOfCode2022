@@ -39,3 +39,23 @@
 ```
 
 </details>
+
+## Day 3: [Rucksack Reorganization](https://adventofcode.com/2022/day/3)
+
+<details>
+  <summary>Answer for part 1</summary>
+
+```javascript
+7553
+```
+
+</details>
+
+<details>
+  <summary>Answer for part 2</summary>
+
+```javascript
+2758
+```
+
+</details>
