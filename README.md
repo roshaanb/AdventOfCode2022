@@ -59,3 +59,23 @@
 ```
 
 </details>
+
+## Day 4: [Camp Cleanup](https://adventofcode.com/2022/day/4)
+
+<details>
+  <summary>Answer for part 1</summary>
+
+```javascript
+441
+```
+
+</details>
+
+<details>
+  <summary>Answer for part 2</summary>
+
+```javascript
+861
+```
+
+</details>

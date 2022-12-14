@@ -34,30 +34,24 @@ function prioritiseRucksack(filename) {
       ) {
         rucksackArray[i] = rucksackArray[i][j].charCodeAt(0);
       }
-
-      //   ((rucksackArray[i + 1].includes(rucksackArray[i][j])) &&
-      //   (rucksackArray[i + 2].includes(rucksackArray[i][j])))
-      //     ? (rucksackArray[i] = rucksackArray[i][j].charCodeAt(0))
-      //     : false;
     }
   }
 
   // calculate score for part 1
-    const resultPart2 = calculateScore2(rucksackArray);
-    console.log(resultPart2);
+  const resultPart2 = calculateScore2(rucksackArray);
+  console.log(resultPart2);
 }
 
 function calculateScore1(arr) {
-    // calculate scores
-    var score = 0;
-    for (let i = 0; i < arr.length; i += 2) {
-      arr[i] > 91 ? (score += arr[i] - 96) : (score += arr[i] - 38);
-    }
-    return score;
+  // calculate scores
+  var score = 0;
+  for (let i = 0; i < arr.length; i += 2) {
+    arr[i] > 91 ? (score += arr[i] - 96) : (score += arr[i] - 38);
   }
+  return score;
+}
 
 function calculateScore2(arr) {
-  // calculate scores
   var score = 0;
   for (let i = 0; i < arr.length; i += 3) {
     arr[i] > 91 ? (score += arr[i] - 96) : (score += arr[i] - 38);
