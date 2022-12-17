@@ -4,14 +4,14 @@ function strategyForRockPaperScissors(filename) {
   // formatting the input data into an array of pairs
   const rawDataIntoPairs = readFileSync(filename, "utf-8");
 
-  // translating letters into r,p,s part 1 logic
+  // translating letters into r,p,s (part 1 logic)
   const translatedStringUsingPart1Logic = rawDataIntoPairs
     .replace(/X|A/g, "r")
     .replace(/Y|B/g, "p")
     .replace(/Z|C/g, "s")
     .split("\n");
 
-  // translating letters into r,p,s and win,lose,draw part 2 logic
+  // translating letters into r,p,s and win,lose,draw (part 2 logic)
   const translatedStringUsingPart2Logic = rawDataIntoPairs
     .replace(/A/g, "r")
     .replace(/B/g, "p")
@@ -21,11 +21,9 @@ function strategyForRockPaperScissors(filename) {
     .replace(/Z/g, "w")
     .split("\n");
 
-  console.log(translatedStringUsingPart2Logic);
-
   // calculate score for part 1
   var resultPart1 = calculateScore(translatedStringUsingPart1Logic);
-  console.log(resultPart1);
+  console.log(`Calculated score using part 1 is ${resultPart1}.`);
 
   // manipulate arr 2 to get to format of arr 1
   const scenario2IntoUsableFormat = translatedStringUsingPart2Logic.map(
@@ -39,7 +37,7 @@ function strategyForRockPaperScissors(filename) {
   );
 
   var resultPart2 = calculateScore(scenario2IntoUsableFormat);
-  console.log(resultPart2);
+  console.log(`Calculated score using part 2 is ${resultPart2}.`);
 }
 
 function calculateScore(arr) {
@@ -101,7 +99,5 @@ function getDesiredResult(outcome, elfChoice) {
       return "error in getting desired result";
   }
 }
-
-console.log(`expect ${getDesiredResult("lose", "paper")} to be rock`);
 
 strategyForRockPaperScissors("day_2/strategy.txt");

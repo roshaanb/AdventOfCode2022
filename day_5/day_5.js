@@ -28,10 +28,10 @@ function supplyStacks(filename) {
   const transposedArray2 = [...transposedArray];
 
   const movedArrP1 = moveWithCrane1(transposedArray1, rawData[1].split("\n"));
-  console.log(movedArrP1);
+  console.log(`Tops of stacks using first crane is ${movedArrP1}.`);
 
   const movedArrP2 = moveWithCrane2(transposedArray2, rawData[1].split("\n"));
-  console.log(movedArrP2);
+  console.log(`Tops of stacks using first crane is ${movedArrP2}.`);
 }
 
 function transposeArray(array) {
@@ -53,8 +53,7 @@ function transposeArray(array) {
 
 function moveWithCrane1(atc, aoi) {
   // function for moving num from x to y part 1
-  // atc is arrayToChange;
-  // aoi is arrOfInstructions;
+  // atc is arrayToChange, aoi is arrOfInstructions
 
   while (aoi.length > 0) {
     const arrFromString = aoi[0].split(" ");
@@ -78,8 +77,7 @@ function moveWithCrane1(atc, aoi) {
 
 function moveWithCrane2(atc, aoi) {
   // function for moving num from x to y part 2
-  // atc is arrayToChange;
-  // aoi is arrOfInstructions;
+  // atc is arrayToChange, aoi is arrOfInstruction
 
   while (aoi.length > 0) {
     const arrFromString = aoi[0].split(" ");

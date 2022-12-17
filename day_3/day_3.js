@@ -12,7 +12,7 @@ function prioritiseRucksack(filename) {
     arrayOfSplitRucksacks.push(rucksack.slice(rucksack.length / 2));
   }
 
-  // finding common element as char code p1
+  // finding common element as char code part 1
   for (let i = 0; i < arrayOfSplitRucksacks.length; i += 2) {
     for (let j in arrayOfSplitRucksacks[i]) {
       arrayOfSplitRucksacks[i + 1].includes(arrayOfSplitRucksacks[i][j])
@@ -23,9 +23,9 @@ function prioritiseRucksack(filename) {
 
   // calculate score for part 1
   const resultPart1 = calculateScore1(arrayOfSplitRucksacks);
-  console.log(resultPart1);
+  console.log(`Calculated score using part 1 is ${resultPart1}.`);
 
-  // finding common element as char code p1
+  // finding common element as char code part 2
   for (let i = 0; i < rucksackArray.length; i += 3) {
     for (let j in rucksackArray[i]) {
       if (
@@ -37,13 +37,12 @@ function prioritiseRucksack(filename) {
     }
   }
 
-  // calculate score for part 1
+  // calculate score for part 2
   const resultPart2 = calculateScore2(rucksackArray);
-  console.log(resultPart2);
+  console.log(`Calculated score using part 2 is ${resultPart2}.`);
 }
 
 function calculateScore1(arr) {
-  // calculate scores
   var score = 0;
   for (let i = 0; i < arr.length; i += 2) {
     arr[i] > 91 ? (score += arr[i] - 96) : (score += arr[i] - 38);

@@ -6,10 +6,8 @@ function assignmentRanges(filename) {
   const assignmentsRaw = readFileSync(filename, "utf-8").split("\n");
   const assignmentPairsArray = assignmentsRaw.map((pair) => pair.split(","));
 
-  // initialise array of ranges
-  const arrayIntoRanges = [];
-
   // flatten array and add to arrays of ranges
+  const arrayIntoRanges = [];
   for (i = 0; i < assignmentPairsArray.length; i++) {
     for (j = 0; j < assignmentPairsArray[i].length; j++) {
       assignmentPairsArray[i][j] = assignmentPairsArray[i][j].split("-");
@@ -29,9 +27,8 @@ function assignmentRanges(filename) {
     );
   }
 
-  let countOfFullyContainedAssignments = 0;
-
   // add to score if array containment
+  let countOfFullyContainedAssignments = 0;
   for (i = 0; i < arrayIntoRanges.length; i += 2) {
     const arr1 = arrayIntoRanges[i];
     const arr2 = arrayIntoRanges[i + 1];
@@ -64,10 +61,12 @@ function assignmentRanges(filename) {
       : false;
   }
 
-  console.log(assignmentPairsArray);
-  console.log(arrayIntoRanges);
-  console.log(countOfFullyContainedAssignments);
-  console.log(countOfOverlappingAssignments);
+  console.log(
+    `Number of fully contained assignments is ${countOfFullyContainedAssignments}.`
+  );
+  console.log(
+    `Number of overlapping assignments is ${countOfOverlappingAssignments}.`
+  );
 }
 
 assignmentRanges("day_4/assignmentsData.txt");

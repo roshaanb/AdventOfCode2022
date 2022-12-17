@@ -10,7 +10,6 @@ function countHighestCalories(filename) {
     .split(",,");
 
   // creating array of sum of each elf's calories
-
   const elfCaloriesSummed = arrayOfCaloriesSeparatedByElf.map(
     (stringOfNums) => {
       const nums = stringOfNums.split(",");
@@ -25,7 +24,6 @@ function countHighestCalories(filename) {
   );
 
   // sorting by most calories
-
   elfCaloriesSummed.sort(function (a, b) {
     return b - a;
   });
@@ -34,8 +32,8 @@ function countHighestCalories(filename) {
   const sumOfHighest3 =
     elfCaloriesSummed[0] + elfCaloriesSummed[1] + elfCaloriesSummed[2];
 
-  console.log(sumOfHighest3);
-  console.log(elfWithMost);
+  console.log(`Elf with most calories has ${elfWithMost} calories.`);
+  console.log(`Sum of higest 3 elves is ${sumOfHighest3} calories.`);
 }
 
 countHighestCalories("day_1/elvesItems.txt");
