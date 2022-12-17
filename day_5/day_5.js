@@ -31,7 +31,7 @@ function supplyStacks(filename) {
   console.log(`Tops of stacks using first crane is ${movedArrP1}.`);
 
   const movedArrP2 = moveWithCrane2(transposedArray2, rawData[1].split("\n"));
-  console.log(`Tops of stacks using first crane is ${movedArrP2}.`);
+  console.log(`Tops of stacks using second crane is ${movedArrP2}.`);
 }
 
 function transposeArray(array) {
