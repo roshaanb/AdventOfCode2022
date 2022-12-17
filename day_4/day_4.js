@@ -1,5 +1,4 @@
 const { readFileSync } = require("fs");
-const range = require("lodash.range");
 
 function assignmentRanges(filename) {
   // formatting the input data into an array of assignment pairs
@@ -67,6 +66,21 @@ function assignmentRanges(filename) {
   console.log(
     `Number of overlapping assignments is ${countOfOverlappingAssignments}.`
   );
+}
+
+function range(start, end) {
+  //function to return array of nums from start to end, not including end
+
+  var arrStart = parseInt(start);
+  var arrEnd = parseInt(end);
+  let rangeArr = [];
+
+  while (arrEnd > arrStart) {
+    rangeArr.push(arrStart);
+    arrStart++;
+  }
+
+  return rangeArr;
 }
 
 assignmentRanges("day_4/assignmentsData.txt");

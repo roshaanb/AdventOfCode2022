@@ -100,13 +100,13 @@ FSZWBPTBG
 
 </details>
 
-## Day 6: [](https://adventofcode.com/2022/day/6)
+## Day 6: [BARB](https://adventofcode.com/2022/day/6)
 
 <details>
   <summary>Answer for part 1</summary>
 
 ```javascript
-CFFHVVHNC
+
 ```
 
 </details>
@@ -115,7 +115,7 @@ CFFHVVHNC
   <summary>Answer for part 2</summary>
 
 ```javascript
-FSZWBPTBG
+
 ```
 
 </details>
