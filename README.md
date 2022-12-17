@@ -79,3 +79,24 @@
 ```
 
 </details>
+
+## Day 5: [Supply Stacks](https://adventofcode.com/2022/day/5)
+
+<details>
+  <summary>Answer for part 1</summary>
+
+```javascript
+CFFHVVHNC
+```
+
+</details>
+
+<details>
+  <summary>Answer for part 2</summary>
+
+```javascript
+FSZWBPTBG
+```
+
+</details>
+
