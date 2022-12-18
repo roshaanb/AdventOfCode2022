@@ -42,7 +42,13 @@ function containsDuplicate(array) {
 const arrayOfPacketBools = messageMarker(rawData, 4);
 const arrayOfMessageBools = messageMarker(rawData, 14);
 
-console.log(`${arrayOfPacketBools.indexOf(false)} characters need to be processed before the first start-of-packet marker is detected.`)
-console.log(`${arrayOfMessageBools.indexOf(false)} characters need to be processed before the first start-of-message marker is detected.`)
-
-//test
+console.log(
+  `${arrayOfPacketBools.indexOf(
+    false
+  )} characters need to be processed before the first start-of-packet marker is detected.`
+);
+console.log(
+  `${arrayOfMessageBools.indexOf(
+    false
+  )} characters need to be processed before the first start-of-message marker is detected.`
+);
