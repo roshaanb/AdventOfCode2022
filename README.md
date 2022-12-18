@@ -100,13 +100,13 @@ FSZWBPTBG
 
 </details>
 
-## Day 6: [BARB](https://adventofcode.com/2022/day/6)
+## Day 6: [Tuning Trouble](https://adventofcode.com/2022/day/6)
 
 <details>
   <summary>Answer for part 1</summary>
 
 ```javascript
-
+1140
 ```
 
 </details>
@@ -115,7 +115,7 @@ FSZWBPTBG
   <summary>Answer for part 2</summary>
 
 ```javascript
-
+3495
 ```
 
 </details>
